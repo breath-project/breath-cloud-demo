@@ -313,19 +313,7 @@
             </plugins>
         </pluginManagement>
     </build>
-
-
-    <!--<distributionManagement>-->
-    <!--<repository>-->
-    <!--<id>boxfish-release</id>-->
-    <!--<url>http://mvnrepo.boxfish.cn/content/repositories/releases/</url>-->
-    <!--</repository>-->
-    <!--<snapshotRepository>-->
-    <!--<id>boxfish-snapshot</id>-->
-    <!--<url>http://mvnrepo.boxfish.cn/content/repositories/snapshots/</url>-->
-    <!--</snapshotRepository>-->
-    <!--</distributionManagement>-->
-
+    
     <!--<build>-->
     <!--<pluginManagement>-->
     <!--<plugins>-->
