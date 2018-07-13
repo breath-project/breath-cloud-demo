@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>app</artifactId>
+    <name>breath-cloud-demo-app</name>
 
     <dependencies>
         <dependency>
@@ -27,7 +28,6 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>19.0</version>
         </dependency>
     </dependencies>
 
@@ -125,5 +125,5 @@
         </plugins>
     </build>
 
-
+    
 </project>
