@@ -9,6 +9,7 @@
         <module name="app" />
         <module name="discovery" />
         <module name="gateway" />
+        <module name="user" />
       </profile>
     </annotationProcessing>
   </component>
