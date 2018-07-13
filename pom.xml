@@ -224,6 +224,7 @@
     <modules>
         <module>gateway</module>
         <module>app</module>
+        <module>discovery</module>
     </modules>
 
     <dependencyManagement>
