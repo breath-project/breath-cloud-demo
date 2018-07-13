@@ -225,6 +225,7 @@
         <module>gateway</module>
         <module>discovery</module>
         <module>user</module>
+        <module>config</module>
     </modules>
 
     <dependencyManagement>
