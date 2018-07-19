@@ -1,0 +1,5 @@
+eureka:
+  instance:
+    appname: dashboard
+server:
+  port: 4040

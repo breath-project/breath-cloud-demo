@@ -223,7 +223,10 @@
 
     <modules>
         <module>gateway</module>
-        <module>app</module>
+        <module>discovery</module>
+        <module>user</module>
+        <module>config</module>
+        <module>dashboard</module>
     </modules>
 
     <dependencyManagement>
