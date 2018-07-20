@@ -25,7 +25,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/spring-cloud-samples/config-repo
+          uri: git@github.com:breath-project/config-repo.git
           basedir: target/config
 
 ---
