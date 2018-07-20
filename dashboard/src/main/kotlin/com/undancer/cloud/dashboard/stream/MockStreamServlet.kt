@@ -2,6 +2,7 @@ package com.undancer.cloud.dashboard.stream
 
 
 import org.apache.commons.io.IOUtils
+import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import java.io.IOException
 import java.nio.charset.Charset
@@ -15,7 +16,9 @@ import javax.servlet.http.HttpServletResponse
  */
 class MockStreamServlet : HttpServlet() {
 
-    val logger = LoggerFactory.getLogger(MockStreamServlet::class.java)
+    companion object {
+        val logger: Logger = LoggerFactory.getLogger(MockStreamServlet::class.java)
+    }
 
     /**
      * @see javax.servlet.http.HttpServlet.doGet
