@@ -1,11 +1,11 @@
 server:
   port: 8888
 
-management:
-  context-path: /admin
-  endpoints:
-    web:
-      base-path: ${management.context-path}
+#management:
+#  context-path: /admin
+#  endpoints:
+#    web:
+#      base-path: ${management.context-path}
 
 logging:
   level:
@@ -15,8 +15,8 @@ logging:
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
-    statusPageUrlPath: /admin/info
-    healthCheckUrlPath: /admin/health
+#    statusPageUrlPath: /admin/info
+#    healthCheckUrlPath: /admin/health
 
 spring:
   profiles:
