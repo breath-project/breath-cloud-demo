@@ -10,6 +10,7 @@
         <module name="dashboard" />
         <module name="discovery" />
         <module name="gateway" />
+        <module name="security" />
         <module name="user" />
       </profile>
     </annotationProcessing>

@@ -227,6 +227,7 @@
         <module>user</module>
         <module>config</module>
         <module>dashboard</module>
+        <module>security</module>
     </modules>
 
     <dependencyManagement>
