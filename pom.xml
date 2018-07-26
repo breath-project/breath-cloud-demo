@@ -228,6 +228,7 @@
         <module>config</module>
         <module>dashboard</module>
         <module>security</module>
+        <module>admin</module>
     </modules>
 
     <dependencyManagement>
@@ -250,6 +251,11 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>2.0.1</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
