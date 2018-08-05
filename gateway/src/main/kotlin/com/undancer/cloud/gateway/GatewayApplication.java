@@ -1,4 +1,4 @@
-package com.undancer.app;
+package com.undancer.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
