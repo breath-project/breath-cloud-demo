@@ -6,11 +6,11 @@
 #        uri: http://example.org
 #        predicates:
 #        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
-
-server:
-  port: 3200
-debug: true
-logging:
-  level:
-    root: DEBUG
-    sun: OFF
+#
+#server:
+#  port: 3200
+#debug: true
+#logging:
+#  level:
+#    root: DEBUG
+#    sun: OFF
