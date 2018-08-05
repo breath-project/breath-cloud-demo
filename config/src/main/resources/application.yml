@@ -11,6 +11,7 @@ logging:
   level:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'DEBUG'
+    org.springframework.web.filter: 'DEBUG'
 
 eureka:
   instance:
