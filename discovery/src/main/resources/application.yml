@@ -2,10 +2,26 @@ server:
   port: 8761
 
 eureka:
-  instance:
-    hostname: localhost
+  #  instance:
+  #    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    region: beijing
+    availability-zones:
+      beijing: beijing-1
+    #      beijing: beijing-1,beijing-2
+    service-url:
+      beijing-1: http://${eureka.instance.hostname}:${server.port}/eureka/
+#      beijing-2: http://${eureka.instance.hostname}:${server.port}/eureka/
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#eureka.datacenter: default1
+#eureka.environment: ${spring.profiles.active:test}
+#spring:
+#  profiles:
+#    active: single
+#---
+#spring:
+#  profile:
+#    name: single
