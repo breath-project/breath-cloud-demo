@@ -41,6 +41,7 @@
         <module>dashboard</module>
         <module>security</module>
         <module>admin</module>
+        <module>track</module>
     </modules>
 
     <dependencyManagement>

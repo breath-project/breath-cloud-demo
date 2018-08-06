@@ -12,6 +12,7 @@
         <module name="discovery" />
         <module name="gateway" />
         <module name="security" />
+        <module name="track" />
         <module name="user" />
       </profile>
     </annotationProcessing>
