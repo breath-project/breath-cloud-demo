@@ -42,6 +42,7 @@
         <module>security</module>
         <module>admin</module>
         <module>track</module>
+        <module>registry</module>
     </modules>
 
     <dependencyManagement>
