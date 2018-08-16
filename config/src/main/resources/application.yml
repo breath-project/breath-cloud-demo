@@ -26,12 +26,16 @@ eureka:
 #        include: refresh
 
 spring:
+  profiles:
+    active: composite
   cloud:
     config:
       server:
-        git:
+        composite:
+        - type: git
           uri: git@github.com:breath-project/config-repo.git
           basedir: target/config
+        - type: native
 
 ---
 spring:
