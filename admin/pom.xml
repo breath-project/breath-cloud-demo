@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>admin</artifactId>
-    <name>breath-cloud-admin</name>
+    <name>breath-cloud-demo-admin</name>
 
     <dependencies>
         <dependency>

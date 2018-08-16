@@ -9,7 +9,6 @@
         <module name="admin" />
         <module name="config" />
         <module name="dashboard" />
-        <module name="discovery" />
         <module name="gateway" />
         <module name="registry" />
         <module name="security" />
