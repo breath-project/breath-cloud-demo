@@ -3,3 +3,23 @@ server:
 spring:
   application:
     name: admin
+  profiles:
+    active: standalone
+
+---
+spring:
+  profiles: standalone
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+---
+spring:
+  profiles: docker
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://registry:8761/eureka/

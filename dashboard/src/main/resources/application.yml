@@ -1,5 +1,27 @@
+spring:
+  profiles:
+    active: standalone
+
 eureka:
   instance:
     appname: dashboard
 server:
   port: 4040
+
+---
+spring:
+  profiles: standalone
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+---
+spring:
+  profiles: docker
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://registry:8761/eureka/
