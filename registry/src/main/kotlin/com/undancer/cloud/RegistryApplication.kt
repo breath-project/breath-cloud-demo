@@ -1,4 +1,4 @@
-package com.undancer.cloud.discovery
+package com.undancer.cloud
 
 import org.springframework.boot.WebApplicationType
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -9,7 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer
 
 @SpringBootApplication
 @EnableEurekaServer
-class DiscoveryApplication : SpringBootServletInitializer() {
+class RegistryApplication : SpringBootServletInitializer() {
 
     override fun configure(builder: SpringApplicationBuilder): SpringApplicationBuilder {
         return builder.web(WebApplicationType.SERVLET)
@@ -18,7 +18,7 @@ class DiscoveryApplication : SpringBootServletInitializer() {
 }
 
 fun main(args: Array<String>) {
-    runApplication<DiscoveryApplication>(*args) {
+    runApplication<RegistryApplication>(*args) {
 
     }
 }

@@ -1,11 +1,14 @@
 server:
   port: 8888
 
-#management:
-#  context-path: /admin
-#  endpoints:
-#    web:
-#      base-path: ${management.context-path}
+management:
+  #  context-path: /admin
+  endpoints:
+    web:
+      #      base-path: ${management.context-path}
+      exposure:
+        #                include: refresh
+        include: "*"
 
 logging:
   level:
@@ -13,25 +16,23 @@ logging:
     org.springframework.cloud: 'DEBUG'
     org.springframework.web.filter: 'DEBUG'
 
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
+#eureka:
+#  instance:
+#    lease-renewal-interval-in-seconds: 10
 #    statusPageUrlPath: /admin/info
 #    healthCheckUrlPath: /admin/health
 
-#management:
-#  endpoints:
-#    web:
-#      exposure:
-#        include: refresh
-
 spring:
+  profiles:
+    active: composite
   cloud:
     config:
       server:
-        git:
+        composite:
+        - type: git
           uri: git@github.com:breath-project/config-repo.git
           basedir: target/config
+        - type: native
 
 ---
 spring:

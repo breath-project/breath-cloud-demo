@@ -1,12 +1,6 @@
 spring:
-  application:
-    name: gateway
   profiles:
     active: standalone
-  cloud:
-    config:
-      discovery:
-        enabled: true
 
 ---
 spring:

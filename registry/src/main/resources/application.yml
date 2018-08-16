@@ -1,12 +1,14 @@
 server:
   port: 8761
 
+spring:
+  profiles:
+    active: standalone
+
 eureka:
-  instance:
-    hostname: localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    register-with-eureka: false
+    fetch-registry: false
     region: beijing
     availability-zones:
       beijing: beijing-1
@@ -18,10 +20,19 @@ eureka:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 #eureka.datacenter: default1
 #eureka.environment: ${spring.profiles.active:test}
-#spring:
-#  profiles:
-#    active: single
-#---
-#spring:
-#  profile:
-#    name: single
+
+---
+spring:
+  profile:
+    name: standalone
+eureka:
+  instance:
+    hostname: localhost
+
+---
+spring:
+  profile:
+    name: docker
+eureka:
+  instance:
+    hostname: registry
