@@ -79,16 +79,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>19.0</version>
+                <version>23.0</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${spring-boot-admin.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-client -->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
