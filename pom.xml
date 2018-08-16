@@ -18,6 +18,9 @@
     <profiles>
         <profile>
             <id>standalone</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <properties>
                 <spring-boot.run.profiles>standalone</spring-boot.run.profiles>
             </properties>
