@@ -10,6 +10,7 @@
         <module name="breath-cloud-client" />
         <module name="config" />
         <module name="dashboard" />
+        <module name="demo" />
         <module name="gateway" />
         <module name="registry" />
         <module name="security" />

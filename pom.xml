@@ -53,15 +53,11 @@
     </properties>
 
     <modules>
-        <module>gateway</module>
         <module>user</module>
-        <module>config</module>
-        <module>dashboard</module>
         <module>security</module>
-        <module>admin</module>
         <module>track</module>
-        <module>registry</module>
         <module>breath-cloud-client</module>
+        <module>cloud</module>
     </modules>
 
     <dependencyManagement>
@@ -85,11 +81,13 @@
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-server</artifactId>
                 <version>${spring-boot-admin.version}</version>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-client -->
             <dependency>
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
@@ -161,20 +159,20 @@
             </plugins>
         </pluginManagement>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!--<executable>true</executable>-->
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            <!--<plugin>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-maven-plugin</artifactId>-->
+            <!--<configuration>-->
+            <!--&lt;!&ndash;<executable>true</executable>&ndash;&gt;-->
+            <!--</configuration>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<goals>-->
+            <!--<goal>repackage</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>

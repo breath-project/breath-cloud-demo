@@ -14,23 +14,21 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>breath-cloud-demo</groupId>
+            <artifactId>breath-cloud-client</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-server</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-client -->
         <!--<dependency>-->
         <!--<groupId>de.codecentric</groupId>-->
         <!--<artifactId>spring-boot-admin-starter-client</artifactId>-->
         <!--</dependency>-->
     </dependencies>
-    
+
 </project>
