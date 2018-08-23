@@ -112,6 +112,18 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-collector-rabbitmq -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-storage-elasticsearch -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-storage-elasticsearch</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
             <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-ui -->
             <dependency>
                 <groupId>io.zipkin.java</groupId>

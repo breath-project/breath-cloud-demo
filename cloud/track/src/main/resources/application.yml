@@ -1,2 +1,23 @@
 server:
   port: 9411
+
+#spring:
+#  rabbitmq:
+#    username: rabbit
+#    password: rabbit
+#  zipkin:
+#    sender:
+#      type: rabbit
+##    service:
+##      name:
+#  sleuth:
+#    messaging:
+#      rabbit:
+#        enabled: true
+
+#zipkin:
+#  collector:
+#    rabbitmq:
+#      addresses: localhost:5672
+#      username: rabbit
+#      password: rabbit

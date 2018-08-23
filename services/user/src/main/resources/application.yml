@@ -1,0 +1,19 @@
+#spring:
+#  zipkin:
+#        locator:
+#          discovery:
+#        enabled: true
+#    discovery-client-enabled: true
+#    sender:
+#      type: rabbit
+#  rabbitmq:
+#    username: rabbit
+#    password: rabbit
+
+spring:
+  sleuth:
+    sampler:
+      probability: 1
+#  zipkin:
+#    sender:
+#      type: rabbit
