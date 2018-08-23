@@ -12,7 +12,9 @@
         <module name="dashboard" />
         <module name="demo" />
         <module name="gateway" />
+        <module name="modules" />
         <module name="registry" />
+        <module name="samples" />
         <module name="security" />
         <module name="track" />
         <module name="user" />

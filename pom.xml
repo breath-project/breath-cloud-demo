@@ -54,10 +54,12 @@
     </properties>
 
     <modules>
-        <module>user</module>
         <module>security</module>
         <module>breath-cloud-client</module>
         <module>cloud</module>
+        <module>modules</module>
+        <module>services</module>
+        <module>samples</module>
     </modules>
 
     <dependencyManagement>
