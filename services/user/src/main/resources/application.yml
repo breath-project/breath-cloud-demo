@@ -16,4 +16,4 @@ spring:
       probability: 1
   zipkin:
     sender:
-      type: web
+      type: rabbit
