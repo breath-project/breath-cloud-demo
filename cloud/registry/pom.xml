@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>registry</artifactId>
-    <name>breath-cloud-demo-registry</name>
+    <name>Breath :: Cloud :: Registry</name>
 
     <dependencies>
         <dependency>

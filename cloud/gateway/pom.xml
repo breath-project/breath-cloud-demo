@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gateway</artifactId>
-    <name>breath-cloud-demo-gateway</name>
+    <name>Breath :: Cloud :: Gateway</name>
 
     <dependencies>
         <dependency>
