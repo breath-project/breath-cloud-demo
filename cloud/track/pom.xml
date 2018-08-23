@@ -31,10 +31,6 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
         <!--<dependency>-->
@@ -42,18 +38,18 @@
         <!--<artifactId>spring-cloud-stream-binder-rabbit</artifactId>-->
         <!--&lt;!&ndash;<version>2.0.0.RELEASE</version>&ndash;&gt;-->
         <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.amqp</groupId>-->
-        <!--<artifactId>spring-rabbit</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+        </dependency>
         <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin-server</artifactId>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>io.zipkin.java</groupId>-->
-        <!--<artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>io.zipkin.java</groupId>
+            <artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>
+        </dependency>
         <!--<dependency>-->
         <!--<groupId>io.zipkin.java</groupId>-->
         <!--<artifactId>zipkin-autoconfigure-storage-elasticsearch</artifactId>-->
