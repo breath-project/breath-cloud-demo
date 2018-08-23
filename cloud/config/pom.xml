@@ -12,6 +12,18 @@
     <artifactId>config</artifactId>
     <name>breath-cloud-demo-config</name>
 
+    <profiles>
+        <profile>
+            <id>standalone</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <spring-boot.run.profiles>composite,standalone</spring-boot.run.profiles>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
