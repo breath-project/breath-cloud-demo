@@ -10,8 +10,8 @@
     <file url="file://$PROJECT_DIR$/cloud/demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud/gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud/registry" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud/track" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/security" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/track" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user" charset="UTF-8" />
   </component>
 </project>

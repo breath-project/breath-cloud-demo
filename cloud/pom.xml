@@ -19,6 +19,7 @@
         <module>dashboard</module>
         <module>gateway</module>
         <module>admin</module>
+        <module>track</module>
         <module>demo</module>
     </modules>
 
