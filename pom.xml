@@ -61,6 +61,7 @@
         <module>admin</module>
         <module>track</module>
         <module>registry</module>
+        <module>breath-cloud-client</module>
     </modules>
 
     <dependencyManagement>
@@ -93,6 +94,11 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>breath-cloud-demo</groupId>
+                <artifactId>breath-cloud-client</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
