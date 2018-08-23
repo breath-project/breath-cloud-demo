@@ -50,17 +50,16 @@
         <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
         <spring-cloud.version>Finchley.SR1</spring-cloud.version>
         <spring-boot-admin.version>2.0.2</spring-boot-admin.version>
+        <zipkin.version>2.11.3</zipkin.version>
     </properties>
 
     <modules>
-        <module>gateway</module>
-        <module>user</module>
-        <module>config</module>
-        <module>dashboard</module>
         <module>security</module>
-        <module>admin</module>
-        <module>track</module>
-        <module>registry</module>
+        <module>breath-cloud-client</module>
+        <module>cloud</module>
+        <module>modules</module>
+        <module>services</module>
+        <module>samples</module>
     </modules>
 
     <dependencyManagement>
@@ -96,6 +95,41 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${spring-boot-admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>breath-cloud-demo</groupId>
+                <artifactId>breath-cloud-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-server -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-log4j2</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-collector-rabbitmq -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-collector-rabbitmq</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-storage-elasticsearch -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-storage-elasticsearch</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-ui -->
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -165,8 +199,77 @@
         </pluginManagement>
         <plugins>
             <plugin>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <configuration>
+                    <compilerPlugins>
+                        <plugin>spring</plugin>
+                    </compilerPlugins>
+                    <jvmTarget>${java.version}</jvmTarget>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <sourceDir>${project.basedir}/src/main/kotlin/</sourceDir>
+                                <sourceDir>${project.basedir}/src/main/java/</sourceDir>
+                            </sourceDirs>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <sourceDir>${project.basedir}/src/main/kotlin/</sourceDir>
+                                <sourceDir>${project.basedir}/src/main/java/</sourceDir>
+                            </sourceDirs>
+                        </configuration>
+                    </execution>
+                </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                        <artifactId>kotlin-maven-allopen</artifactId>
+                        <version>${kotlin.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <executions>
+                    <!-- Replacing default-compile as it is treated specially by maven -->
+                    <execution>
+                        <id>default-compile</id>
+                        <phase>none</phase>
+                    </execution>
+                    <!-- Replacing default-testCompile as it is treated specially by maven -->
+                    <execution>
+                        <id>default-testCompile</id>
+                        <phase>none</phase>
+                    </execution>
+                    <execution>
+                        <id>java-compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>java-test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -194,6 +297,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
