@@ -78,10 +78,11 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
-                <version>19.0</version>
+                <version>23.0</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/de.codecentric/spring-boot-admin-starter-server -->
             <dependency>
@@ -188,6 +189,12 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>${spring-boot.version}</version>
                 </plugin>
+                <!-- https://mvnrepository.com/artifact/com.google.cloud.tools/jib-maven-plugin -->
+                <plugin>
+                    <groupId>com.google.cloud.tools</groupId>
+                    <artifactId>jib-maven-plugin</artifactId>
+                    <version>0.9.8</version>
+                </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
@@ -283,6 +290,10 @@
             <plugin>
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
