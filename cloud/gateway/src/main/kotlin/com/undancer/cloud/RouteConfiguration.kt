@@ -1,4 +1,4 @@
-package com.undancer.cloud.gateway
+package com.undancer.cloud
 
 import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter
 import org.springframework.cloud.gateway.route.RouteLocator

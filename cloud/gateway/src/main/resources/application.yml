@@ -2,10 +2,10 @@ spring:
   cloud:
     gateway:
       routes:
-#      - id: after_route
-#        uri: http://example.org
-#        predicates:
-#        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+      #      - id: after_route
+      #        uri: http://example.org
+      #        predicates:
+      #        - After=2017-01-20T17:42:47.789-07:00[America/Denver]
       - id: user
         uri: lb://user
         predicates:
@@ -14,7 +14,8 @@ spring:
 #server:
 #  port: 3200
 #debug: true
-#logging:
-#  level:
-#    root: DEBUG
-#    sun: OFF
+logging:
+  level:
+    #    root: DEBUG
+    #    sun: OFF
+    org.springframework.cloud.gateway: TRACE

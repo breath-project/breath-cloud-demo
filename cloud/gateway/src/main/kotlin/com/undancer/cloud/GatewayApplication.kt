@@ -1,4 +1,4 @@
-package com.undancer.cloud.gateway
+package com.undancer.cloud
 
 import org.springframework.boot.runApplication
 import org.springframework.cloud.client.SpringCloudApplication
