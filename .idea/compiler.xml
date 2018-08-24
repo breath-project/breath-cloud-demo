@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin" />
+        <module name="breath-cloud-client" />
+        <module name="config" />
+        <module name="dashboard" />
+        <module name="demo" />
+        <module name="gateway" />
+        <module name="modules" />
+        <module name="registry" />
+        <module name="samples" />
+        <module name="security" />
+        <module name="track" />
+        <module name="user" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: track
+  profiles:
+    active: standalone
+  cloud:
+    config:
+      discovery:
+        enabled: true
+
+---
+spring:
+  profiles: standalone
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+---
+spring:
+  profiles: docker
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://registry:8761/eureka/

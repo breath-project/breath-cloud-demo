@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: standalone
+#encrypt:
+#  failOnError: false
+#  keyStore:
+#    location: classpath:keystore.jks
+#    password: ${KEYSTORE_PASSWORD:foobar} # don't use a default in production
+#    alias: test
+
+---
+spring:
+  profiles: standalone
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+---
+spring:
+  profiles: docker
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://registry:8761/eureka/

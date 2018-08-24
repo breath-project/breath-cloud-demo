@@ -1,0 +1,21 @@
+server:
+  port: 9411
+  use-forward-headers: true
+  compression:
+    enabled: true
+    # compresses any response over min-response-size (default is 2KiB)
+    # Includes dynamic json content and large static assets from zipkin-ui
+    mime-types: application/json,application/javascript,text/css,image/svg
+
+spring:
+  mvc:
+    favicon:
+      enabled: false
+
+zipkin:
+  collector:
+    rabbitmq:
+      addresses: localhost:5672
+      queue: zipkin
+      username: rabbit
+      password: rabbit
