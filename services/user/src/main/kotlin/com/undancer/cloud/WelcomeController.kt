@@ -1,4 +1,4 @@
-package com.undancer.cloud.user
+package com.undancer.cloud
 
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.GetMapping

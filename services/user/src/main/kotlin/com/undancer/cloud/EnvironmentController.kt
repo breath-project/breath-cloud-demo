@@ -1,4 +1,4 @@
-package com.undancer.cloud.user
+package com.undancer.cloud
 
 import com.google.common.collect.Maps
 import org.springframework.beans.factory.annotation.Value

@@ -1,4 +1,4 @@
-package com.undancer.cloud.user
+package com.undancer.cloud
 
 import org.springframework.boot.builder.SpringApplicationBuilder
 import org.springframework.boot.runApplication
