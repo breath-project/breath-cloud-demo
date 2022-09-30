@@ -28,10 +28,14 @@ spring:
   cloud:
     config:
       server:
+        git:
+#          try-master-branch: true - default label
+          default-label: master
         composite:
         - type: git
           uri: git@github.com:breath-project/config-repo.git
           basedir: target/config
+          default-label: master
         - type: native
 
 ---

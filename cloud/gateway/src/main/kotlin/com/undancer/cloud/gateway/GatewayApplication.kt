@@ -1,9 +1,11 @@
 package com.undancer.cloud.gateway
 
+import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cloud.client.SpringCloudApplication
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 
-@SpringCloudApplication
+@SpringBootApplication
+@EnableDiscoveryClient
 class GatewayApplication
 
 fun main(args: Array<String>) {

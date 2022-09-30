@@ -1,11 +1,13 @@
 package com.undancer.cloud.admin
 
 import de.codecentric.boot.admin.server.config.EnableAdminServer
+import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.cloud.client.SpringCloudApplication
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 
+@SpringBootApplication
+@EnableDiscoveryClient
 @EnableAdminServer
-@SpringCloudApplication
 class AdminApplication
 
 fun main(args: Array<String>) {

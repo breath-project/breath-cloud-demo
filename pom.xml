@@ -47,12 +47,11 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <!--<gmavenplus-plugin.version>1.5</gmavenplus-plugin.version>-->
         <!--<scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>-->
-<!--        <spring-boot.version>2.7.4</spring-boot.version>-->
-        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
-        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
-<!--        <spring-cloud.version>2021.0.4</spring-cloud.version>-->
+        <spring-boot.version>2.7.4</spring-boot.version>
+        <spring-cloud.version>2021.0.4</spring-cloud.version>
         <spring-boot-admin.version>2.7.5</spring-boot-admin.version>
         <zipkin.version>2.12.9</zipkin.version>
+        <snakeyaml.version>1.33</snakeyaml.version>
     </properties>
 
     <modules>
@@ -82,7 +81,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
             <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -135,6 +133,18 @@
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.11.0</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
