@@ -6,18 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="admin" />
-        <module name="breath-cloud-client" />
-        <module name="config" />
-        <module name="dashboard" />
-        <module name="demo" />
-        <module name="gateway" />
-        <module name="modules" />
         <module name="registry" />
-        <module name="samples" />
         <module name="security" />
-        <module name="track" />
+        <module name="breath-cloud-client" />
+        <module name="admin" />
+        <module name="config" />
         <module name="user" />
+        <module name="modules" />
+        <module name="samples" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
   </component>
