@@ -47,7 +47,8 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <!--<gmavenplus-plugin.version>1.5</gmavenplus-plugin.version>-->
         <!--<scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>-->
-        <spring-boot.version>2.7.4</spring-boot.version>
+<!--        <spring-boot.version>2.7.4</spring-boot.version>-->
+        <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
 <!--        <spring-cloud.version>2021.0.4</spring-cloud.version>-->
         <spring-boot-admin.version>2.7.5</spring-boot-admin.version>
@@ -65,6 +66,7 @@
 
     <dependencyManagement>
         <dependencies>
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
@@ -72,6 +74,7 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -79,6 +82,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
             <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
             <dependency>
                 <groupId>com.google.guava</groupId>
