@@ -27,7 +27,7 @@ class DashboardApplication : SpringBootServletInitializer() {
 
 }
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<DashboardApplication>(*args) {
 
     }

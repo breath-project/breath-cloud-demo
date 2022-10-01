@@ -22,7 +22,7 @@ class TrackApplication : SpringBootServletInitializer() {
 
 }
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<TrackApplication>(*args) {
 
     }

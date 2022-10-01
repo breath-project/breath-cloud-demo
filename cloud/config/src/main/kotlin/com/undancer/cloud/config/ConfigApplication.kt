@@ -26,7 +26,7 @@ class ConfigApplication : SpringBootServletInitializer() {
 
 }
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<ConfigApplication>(*args) {
 
     }
