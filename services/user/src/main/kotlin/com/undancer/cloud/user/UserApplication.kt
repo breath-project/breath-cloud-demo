@@ -16,7 +16,7 @@ class UserApplication : SpringBootServletInitializer() {
 
 }
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<UserApplication>(*args) {
     }
 }

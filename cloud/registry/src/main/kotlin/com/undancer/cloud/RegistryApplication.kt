@@ -17,7 +17,7 @@ class RegistryApplication : SpringBootServletInitializer() {
 
 }
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<RegistryApplication>(*args) {
 
     }

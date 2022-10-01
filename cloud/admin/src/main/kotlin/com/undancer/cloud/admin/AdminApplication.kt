@@ -10,7 +10,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 @EnableAdminServer
 class AdminApplication
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<AdminApplication>(*args) {
 
     }

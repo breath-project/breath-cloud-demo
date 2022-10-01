@@ -9,6 +9,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient
 @EnableDiscoveryClient
 class SecurityApplication : SpringBootServletInitializer()
 
-fun main(args: Array<String>) {
+fun main(vararg args: String) {
     runApplication<SecurityApplication>(*args)
 }
