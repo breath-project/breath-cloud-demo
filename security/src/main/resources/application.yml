@@ -10,4 +10,4 @@ spring:
             provider: github
             client-id: 25cc8d391277df9d24ac
             client-secret: 8dc1c763ca3ce168cec344f03df9c36c3f947241
-            redirect-uri: http://localhost:4000/oauth2/authorization/github
+            redirect-uri: http://localhost:4000/login/oauth2/code/github
