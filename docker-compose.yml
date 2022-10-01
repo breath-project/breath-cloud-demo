@@ -5,10 +5,10 @@ services:
   redis:
     image: redis:alpine
     ports:
-    - "6379"
+      - "6379"
     networks:
-    - frontend
-    - backend
+      - frontend
+      - backend
   #    deploy:
   #      replicas: 2
   #      update_config:
@@ -22,22 +22,22 @@ services:
   registry:
     image: breath-cloud-demo-registry:1.0-SNAPSHOT
     environment:
-    - spring.profiles.active=docker
+      - spring.profiles.active=docker
     ports:
-    - "8761"
+      - "8761"
     networks:
-    - frontend
-    - backend
-    
+      - frontend
+      - backend
+
   config:
     image: breath-cloud-demo-config:1.0-SNAPSHOT
     environment:
-    - spring.profiles.active=docker,composite
+      - spring.profiles.active=docker,composite
     ports:
-    - "8888"
+      - "8888"
     networks:
-    - frontend
-    - backend
+      - frontend
+      - backend
 
 networks:
   frontend:

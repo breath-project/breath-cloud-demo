@@ -90,8 +90,8 @@ class MockStreamServlet : HttpServlet() {
         try {
             val file = "/" + this.javaClass.getPackage().name.replace('.', '/') + "/" + filename
             return this.javaClass.getResourceAsStream(file)
-                    .bufferedReader(Charset.forName("UTF-8"))
-                    .use { i -> IOUtils.toString(i) }
+                .bufferedReader(Charset.forName("UTF-8"))
+                .use { i -> IOUtils.toString(i) }
         } catch (e: Exception) {
             throw RuntimeException("Could not find file: $filename", e)
         }
